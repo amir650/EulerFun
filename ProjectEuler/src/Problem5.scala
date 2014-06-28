@@ -5,7 +5,7 @@ object Problem5 {
 
   def main(args: Array[String]) {
 
-    System.out.println(Iterator.iterate(20L)(_+20L).find(isEvenlyDivisible))
+    print(Iterator.iterate(20L)(_+20L).find(isEvenlyDivisible))
 
   }
 

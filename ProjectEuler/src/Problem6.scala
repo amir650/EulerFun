@@ -10,7 +10,7 @@ object Problem6 {
 
   def main(args: Array[String]) {
 
-    System.out.println(difference(100))
+    print(difference(100))
 
   }
 
