@@ -30,7 +30,7 @@ object Problem8 {
         .map(c => Character.getNumericValue(c).toLong)
         .toList
 
-    printlightenn(data.sliding(13).map(l => l.product).max)
+    print(data.sliding(13).map(l => l.product).max)
 
   }
 
