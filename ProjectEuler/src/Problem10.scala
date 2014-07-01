@@ -5,8 +5,12 @@ object Problem10 {
 
   def main(args: Array[String]) {
 
-    print((2L to 2000000L).filter(isPrime).sum)
+    print(primeNumbers().takeWhile(_ < 2000000L).sum)
 
+  }
+
+  def primeNumbers(): Stream[Long] = {
+    Iterator.iterate(2L)(_+1L).filter(isPrime).toStream
   }
 
   def isPrime(n: Long): Boolean = {
